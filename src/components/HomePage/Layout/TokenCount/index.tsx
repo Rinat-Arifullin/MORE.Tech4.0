@@ -5,7 +5,7 @@ import Frame, { TFrameTheme } from 'containers/Frame';
 
 import { EArea } from 'types/router';
 
-import cx from 'index.module.scss';
+import cx from './index.module.scss';
 
 interface IProps {
   theme: TFrameTheme;
