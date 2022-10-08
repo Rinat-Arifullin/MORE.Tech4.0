@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.card {
+  width: fit-content;
+  border-radius: 15px;
+  padding: .5rem 1rem;
+  background: linear-gradient(105.16deg, #475196 0%, #737EC7 100%);
+}

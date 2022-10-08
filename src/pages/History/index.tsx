@@ -1,7 +1,8 @@
 import React from 'react';
+import Payment from 'components/HomePage/Layout/Payment';
 
 const HistoryPage = () => {
-  return <h1>History Page</h1>;
+  return <Payment y={1500} />;
 };
 
 export default HistoryPage;

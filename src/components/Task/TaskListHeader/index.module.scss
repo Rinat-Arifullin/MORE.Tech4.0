@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  .left,
+  .rigth {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  .left h3{
+    margin-right: 5rem;
+  }
+}

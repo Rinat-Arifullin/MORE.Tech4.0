@@ -1,0 +1,14 @@
+.wrapper {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    > p {
+      color: #219653;
+    }
+  }
+}

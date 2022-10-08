@@ -1,6 +1,10 @@
 /* eslint-disable  no-empty-pattern */
-import { createSlice } from '@reduxjs/toolkit';
-import { IPaymentHistoryStore, PAYMENT_HISTORY_ALIAS } from './types';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import {
+  IPaymentHistoryStore,
+  IPaymentItem,
+  PAYMENT_HISTORY_ALIAS,
+} from './types';
 import { fetchPaymentHistory } from './thunk';
 
 const initialState: IPaymentHistoryStore = {
@@ -12,7 +16,12 @@ const initialState: IPaymentHistoryStore = {
 export const paymentHistorySlice = createSlice({
   name: PAYMENT_HISTORY_ALIAS,
   initialState,
-  reducers: {},
+  reducers: {
+    addPayment: (state, { payload }: PayloadAction<IPaymentItem>) => {
+      const newState = [payload, ...state.dataSource];
+      state.dataSource = newState;
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(fetchPaymentHistory.pending, (state) => {
       state.loading = true;
@@ -29,6 +38,6 @@ export const paymentHistorySlice = createSlice({
   },
 });
 
-export const {} = paymentHistorySlice.actions;
+export const { addPayment } = paymentHistorySlice.actions;
 
 export default paymentHistorySlice.reducer;

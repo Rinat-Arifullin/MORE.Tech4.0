@@ -1,0 +1,40 @@
+.wrapper {
+  padding: 0 15rem;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .vtb {
+      display: flex;
+      align-items: center;
+      gap: 20rem;
+      > div {
+        display: flex;
+        color: white;
+      }
+      .space{
+        display: flex;
+        gap: 2rem;
+      }
+    }
+
+    .leftH {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+  }
+  .fpInfo{
+    display: flex;
+
+  }
+  .fpTitle {
+    color: white;
+    width: 50%;
+    h1 {
+      font-size: 100px;
+
+    }
+  }
+}

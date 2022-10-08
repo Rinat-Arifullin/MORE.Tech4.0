@@ -1,0 +1,43 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 250px;
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+
+    .guild{
+      > p {
+        color: #BDBDBD;
+      }
+      .guildAvatar {
+        display: flex;
+        gap: .5rem;
+      }
+    }
+
+    .raiting,
+    .lvl{
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      width: 100%;
+      gap: 1rem;
+      border: 1px solid rgba(0, 0, 0, 0.09);
+      border-radius: 15px;
+      padding: .5rem;
+      > div {
+        padding: .5rem 1rem;
+        background: #5467e3;
+        color: white;
+        border-radius: 15px;
+      }
+    }
+
+  }
+}

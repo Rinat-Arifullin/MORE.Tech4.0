@@ -28,11 +28,6 @@ export const sideBarItems: ISideBarItem[] = [
     icon: <HomeIcon />,
   },
   {
-    linkPath: EArea.Events,
-    title: 'Мероприятия',
-    icon: <LayersIcon />,
-  },
-  {
     linkPath: EArea.History,
     title: 'История',
     icon: <BookIcon />,

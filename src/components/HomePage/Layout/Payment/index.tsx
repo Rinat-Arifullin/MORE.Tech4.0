@@ -9,7 +9,11 @@ import { fetchPaymentHistory } from 'store/PaymentHistory/thunk';
 import PaymentTable from './Table';
 import PaymentHeader from './Header';
 
-const Payment = () => {
+interface IProps {
+  y?: number;
+}
+
+const Payment = ({ y }: IProps) => {
   const dataSource = useAppSelector(getPaymentHistoryDataSource);
   const dispatch = useAppDispatch();
 
@@ -19,7 +23,7 @@ const Payment = () => {
   return (
     <Frame theme="white">
       <PaymentHeader />
-      <PaymentTable dataSource={dataSource} />
+      <PaymentTable dataSource={dataSource} y={y} />
     </Frame>
   );
 };

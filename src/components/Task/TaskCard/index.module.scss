@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .img {
+    width: 100%;
+    > img {
+      width: 100%;
+    }
+  }
+
+  .text {
+    padding: 1rem 0;
+  }
+
+
+  .profile {
+    display: flex;
+    align-items: self-start;
+    gap: 1rem;
+  }
+
+}

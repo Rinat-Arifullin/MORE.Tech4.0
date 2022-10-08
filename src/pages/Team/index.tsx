@@ -1,7 +1,17 @@
 import React from 'react';
+import { Divider } from 'antd';
 
-const TeamPage = () => {
-  return <h1>Team Page</h1>;
+import TeamSearch from 'components/TeamPage/TeamSearch';
+import TeamList from 'components/TeamPage/TeamList';
+
+const TeamLayout = () => {
+  return (
+    <div>
+      <TeamSearch />
+      <Divider />
+      <TeamList />
+    </div>
+  );
 };
 
-export default TeamPage;
+export default TeamLayout;

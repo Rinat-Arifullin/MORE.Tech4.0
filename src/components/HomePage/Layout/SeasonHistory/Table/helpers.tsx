@@ -19,7 +19,7 @@ export const columns: ColumnsType = [
     dataIndex: 'taskCount',
     title: 'Выполнил заданий',
     render: (title) => {
-      return <div>title</div>;
+      return <div>{title}</div>;
     },
   },
   {
@@ -28,16 +28,9 @@ export const columns: ColumnsType = [
     render: (title) => {
       return (
         <div className={cx.guild}>
-          <div className={cx.avatar}>
-            <img src={avatar2} alt="123" />
-          </div>
-          <span>Любимые герои</span>
+          <span>{title}</span>
         </div>
       );
     },
-  },
-  {
-    dataIndex: 'awards',
-    title: 'Награды',
   },
 ];

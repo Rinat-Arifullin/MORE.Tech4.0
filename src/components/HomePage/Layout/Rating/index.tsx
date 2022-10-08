@@ -1,10 +1,11 @@
 import React from 'react';
-import { Progress } from 'antd';
+import { Progress, Space } from 'antd';
 import { Link } from 'react-router-dom';
 
 import { EArea } from 'types/router';
 
 import Frame, { TFrameTheme } from 'containers/Frame';
+import SendMoney from 'components/SendMoney';
 
 import cx from './index.module.scss';
 
@@ -30,9 +31,11 @@ const RatingCard = ({
           <p>До повышения уровня осталось:</p>
           <Progress percent={progress} />
         </div>
-        <Link to={EArea.Tasks}>
-          <a>Перейти к заданиям</a>
-        </Link>
+        <Space>
+          <Link to={EArea.Tasks}>
+            <a>Перейти к заданиям</a>
+          </Link>
+        </Space>
       </div>
     </Frame>
   );

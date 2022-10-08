@@ -1,9 +1,7 @@
 import React from 'react';
-import { Button, Tag, Tooltip } from 'antd';
-import { Link } from 'react-router-dom';
 
-import Frame from 'containers/Frame';
-import { EArea } from 'types/router';
+import ProfileCard from 'components/ProfileCard';
+import CreateTaskModal from 'components/CreateTaskModal';
 
 // @ts-ignore
 import { ReactComponent as EditIcon } from 'assets/images/svg/edit.svg';
@@ -14,40 +12,22 @@ import avatar from 'assets/images/png/avatar.png';
 
 import cx from './index.module.scss';
 
-const ProfileCard = () => {
+const Profile = () => {
   return (
     <div className={cx.left}>
-      <Frame theme="white" classes={cx.height}>
-        <div className={cx.wrapper}>
-          <Link to="/">
-            <EditIcon />
-          </Link>
-          <div className={cx.profile}>
-            <div className={cx.avatar}>
-              <div>
-                <img src={avatar} alt="userAvatar" />
-              </div>
-              <h2>пупкин Александр Олегович</h2>
-              <Tag>UX designer</Tag>
-              <Tag>Бизнес-аналитик</Tag>
-            </div>
-            <div className={cx.guild}>
-              <p>Гильдия</p>
-              <div className={cx.guildAvatar}>
-                <div>
-                  <img src={avatar} alt="guildAvatar" width="25px" />
-                </div>
-                <p>Любимые герои</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Frame>
-      <Button type="primary">
-        <Link to={EArea.Tasks}>Создать задание</Link>
-      </Button>
+      <ProfileCard
+        guildAvatar={avatar}
+        guildTitle="Back-end"
+        name="Иван П.А."
+        userAvatar={avatar}
+        professions={['Back-end', 'Top-manager']}
+        raiting={30}
+        lvl={2}
+        id={1}
+      />
+      <CreateTaskModal />
     </div>
   );
 };
 
-export default ProfileCard;
+export default Profile;

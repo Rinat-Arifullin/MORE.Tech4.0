@@ -9,6 +9,7 @@ import App from './App';
 
 import 'styles/global.scss';
 import ErrorBoundary from './components/ErrorBoundary';
+import Main from './pages/Main';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,

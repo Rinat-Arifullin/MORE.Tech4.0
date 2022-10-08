@@ -1,11 +1,15 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import paymentHistoryReducer from './PaymentHistory/slice';
 import seasonHistoryReducer from './SeasonHistory/slice';
+import teamListReducer from './Team/slice';
+import taskListReducer from './TaskList/slice';
 
 export const store = configureStore({
   reducer: {
     paymentHistory: paymentHistoryReducer,
     seasonHistory: seasonHistoryReducer,
+    teamList: teamListReducer,
+    taskList: taskListReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
