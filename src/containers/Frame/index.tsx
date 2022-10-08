@@ -14,9 +14,7 @@ type TProps = {
 
 const Frame: React.FC<TProps> = ({ theme, children, classes }) => {
   return (
-    <div className={classNames(cx.frame, cx[theme], ...(classes || []))}>
-      {children}
-    </div>
+    <div className={classNames(cx.frame, cx[theme], classes)}>{children}</div>
   );
 };
 

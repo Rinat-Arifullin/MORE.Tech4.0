@@ -5,31 +5,31 @@ import RatingCard from './Rating';
 import TokenCount from './TokenCount';
 
 import cx from './index.module.scss';
+import Payment from './Payment';
+import ProfileCard from './Profile';
 
 const HomePageLayout = () => {
   return (
     <div className={cx.wrapper}>
       <div className={cx.statInfo}>
         <div>
-          <RatingCard theme="gray" progress={70} level="2" />
+          <RatingCard theme="white" progress={70} level="2" />
         </div>
         <div>
-          <TokenCount theme="gray" count="2 567" title="Количество монет" />
+          <TokenCount theme="white" count="2 567" title="Количество монет" />
         </div>
         <div>
           <TokenCount
-            theme="gray"
+            theme="white"
             count="2 567"
             title="Количество NFT-сертификатов"
           />
         </div>
       </div>
-
-      <div>История начисления и списагния</div>
-      <div>
-        Prifile <Button>Создать задание</Button>
+      <div className={cx.middleSection}>
+        <Payment />
+        <ProfileCard />
       </div>
-      <div>История сезонности</div>
     </div>
   );
 };

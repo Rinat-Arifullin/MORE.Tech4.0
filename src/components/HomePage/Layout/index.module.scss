@@ -1,10 +1,15 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+
   .statInfo{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content: space-between;
+  }
+  .middleSection {
+    display: flex;
+    gap: 1rem;
   }
 }

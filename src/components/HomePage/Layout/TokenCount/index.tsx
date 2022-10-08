@@ -19,7 +19,7 @@ const TokenCount = ({ theme, count, title }: IProps) => {
       <div className={cx.wrapper}>
         <div className={cx.title}>
           <h2>{title}</h2>
-          <div>{count}</div>
+          <div className={cx.count}>{count}</div>
         </div>
 
         <Link to={EArea.Tasks}>

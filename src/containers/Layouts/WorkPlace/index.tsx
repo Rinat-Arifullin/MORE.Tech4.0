@@ -16,7 +16,7 @@ const WorkPlaceLayout = ({ children }) => {
         <Sidebar />
       </div>
       <div className={cx.content}>
-        <Frame theme="white">{children}</Frame>
+        <Frame theme="gray">{children}</Frame>
       </div>
     </div>
   );

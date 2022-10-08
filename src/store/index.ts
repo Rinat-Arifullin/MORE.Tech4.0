@@ -1,7 +1,10 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import paymentHistoryReducer from './PaymentHistory/slice';
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    paymentHistory: paymentHistoryReducer,
+  },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: false,

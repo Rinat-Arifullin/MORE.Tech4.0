@@ -1,0 +1,35 @@
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.height{
+  height: fit-content !important;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 250px;
+  .profile {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+
+    .guild{
+      > p {
+        color: #BDBDBD;
+      }
+      .guildAvatar {
+        display: flex;
+        gap: .5rem;
+      }
+    }
+
+  }
+}
