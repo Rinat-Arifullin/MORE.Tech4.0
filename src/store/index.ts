@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import paymentHistoryReducer from './PaymentHistory/slice';
+import seasonHistoryReducer from './SeasonHistory/slice';
 
 export const store = configureStore({
   reducer: {
     paymentHistory: paymentHistoryReducer,
+    seasonHistory: seasonHistoryReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

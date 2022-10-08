@@ -1,8 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { notification } from 'antd';
 
-import { fetchPaymentHistoryRequest } from 'network/payment';
-
 import { IPaymentItem, PAYMENT_HISTORY_ALIAS } from './types';
 
 const dummyDataIPaymentItem: IPaymentItem[] = [];

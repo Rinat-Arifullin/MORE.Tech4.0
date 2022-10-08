@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Tag } from 'antd';
+import { Button, Tag, Tooltip } from 'antd';
 import { Link } from 'react-router-dom';
 
 import Frame from 'containers/Frame';
@@ -7,6 +7,8 @@ import { EArea } from 'types/router';
 
 // @ts-ignore
 import { ReactComponent as EditIcon } from 'assets/images/svg/edit.svg';
+// @ts-ignore
+import { ReactComponent as HelpIcon } from 'assets/images/svg/help-circle.svg';
 // @ts-ignore
 import avatar from 'assets/images/png/avatar.png';
 
@@ -42,7 +44,7 @@ const ProfileCard = () => {
         </div>
       </Frame>
       <Button type="primary">
-        <Link to={EArea.Tasks}>Create task</Link>
+        <Link to={EArea.Tasks}>Создать задание</Link>
       </Button>
     </div>
   );

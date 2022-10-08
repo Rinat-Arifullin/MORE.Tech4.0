@@ -7,6 +7,7 @@ import TokenCount from './TokenCount';
 import cx from './index.module.scss';
 import Payment from './Payment';
 import ProfileCard from './Profile';
+import SeasonHistory from './SeasonHistory';
 
 const HomePageLayout = () => {
   return (
@@ -30,6 +31,7 @@ const HomePageLayout = () => {
         <Payment />
         <ProfileCard />
       </div>
+      <SeasonHistory />
     </div>
   );
 };

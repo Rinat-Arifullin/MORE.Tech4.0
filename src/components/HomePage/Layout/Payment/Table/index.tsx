@@ -14,7 +14,7 @@ const PaymentTable = ({ dataSource }: IProps) => {
       columns={columns}
       dataSource={dataSource}
       pagination={false}
-      scroll={{ y: 500, x: 600 }}
+      scroll={{ y: 400, x: 600 }}
     />
   );
 };
