@@ -1,0 +1,30 @@
+
+$sidebarWidth: 300px;
+$headerH: 80px;
+
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'sidebar content content'
+    'sidebar content content';
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+
+
+  .header {
+    grid-area: header;
+    height: $headerH
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    width: $sidebarWidth;
+  }
+
+  .content {
+    height: calc(100vh - $headerH - 2rem);
+    width: calc(100vw - $sidebarWidth - 1rem);
+    grid-area: content;
+  }
+}

@@ -1,0 +1,54 @@
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.menuItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.3rem;
+  padding: .5rem 1rem;
+
+  .leftLine {
+    background: white;
+    width: 3px;
+    display: block;
+    height: 0px;
+    border-radius: 2px;
+    opacity: 0;
+    transition: .3s;
+  }
+
+  h3 {
+    color: rgba(243, 247, 250, 0.75);
+    transition: .3s;
+    font-weight: 300;
+  }
+
+  svg {
+    opacity: .6;
+    transition: .3s;
+  }
+
+  &.active,
+  &:hover {
+    .leftLine {
+      opacity: 1;
+      height: 30px;
+    }
+
+    h3 {
+      color: rgb(243, 247, 250);
+    }
+
+    svg {
+      opacity: 1;
+    }
+  }
+
+
+
+}
