@@ -17,12 +17,12 @@ const HomePageLayout = () => {
           <RatingCard theme="white" progress={70} level="2" />
         </div>
         <div>
-          <TokenCount theme="white" count="2 567" title="Количество монет" />
+          <TokenCount theme="white" count="4" title="Количество монет" />
         </div>
         <div>
           <TokenCount
             theme="white"
-            count="2 567"
+            count="2"
             title="Количество NFT-сертификатов"
           />
         </div>

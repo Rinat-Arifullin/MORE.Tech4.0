@@ -3,6 +3,7 @@ import paymentHistoryReducer from './PaymentHistory/slice';
 import seasonHistoryReducer from './SeasonHistory/slice';
 import teamListReducer from './Team/slice';
 import taskListReducer from './TaskList/slice';
+import walletBalanceReducer from './wallets/slice';
 
 export const store = configureStore({
   reducer: {
@@ -10,6 +11,7 @@ export const store = configureStore({
     seasonHistory: seasonHistoryReducer,
     teamList: teamListReducer,
     taskList: taskListReducer,
+    wallet: walletBalanceReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
