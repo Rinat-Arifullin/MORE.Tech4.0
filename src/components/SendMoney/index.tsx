@@ -58,11 +58,11 @@ const SendMoney = ({ defaultUserId }: IProps) => {
           <Carousel>
             <div className={cx.slide}>
               <h2>Монеты</h2>
-              <div>2 567</div>
+              <div>2 </div>
             </div>
             <div className={cx.slide}>
               <h2>NFT-сертификаты</h2>
-              <div>156</div>
+              <div>4</div>
             </div>
           </Carousel>
           <h4 style={{ marginTop: '2rem' }}>Кому</h4>

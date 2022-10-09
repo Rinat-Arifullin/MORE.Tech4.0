@@ -9,12 +9,14 @@ import {
   notification,
   Select,
 } from 'antd';
+import { names } from '../../store/PaymentHistory/thunk';
 
 const { Option } = Select;
 const children: React.ReactNode[] = [];
-for (let i = 0; i < 5; i++) {
-  children.push(<Option key={i}>Пользователь {i}</Option>);
-}
+
+names.forEach((name) => {
+  children.push(<Option key={name}>{name}</Option>);
+});
 
 const CreateTaskModal = () => {
   const [visible, setVisible] = useState(false);
@@ -59,7 +61,7 @@ const CreateTaskModal = () => {
           <Form.Item name="awards" label="NFT-сертификаты">
             <Input placeholder="Количество" />
           </Form.Item>
-          <Form.Item name="awards" label="Монеты">
+          <Form.Item name="awards1" label="Монеты">
             <Input placeholder="Количество" />
           </Form.Item>
         </Form>
